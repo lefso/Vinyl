@@ -1,0 +1,101 @@
+/* Selve bakgrunnen/kroppen */
+@font-face {
+	font-family: LemonMilk;
+	src: url(lemonMilk.woff);
+}
+
+body {
+	background-color: #F1F1F1;
+	width: 100%;
+	margin: 0px auto;
+}
+
+/* Header med logo */
+header {
+	background-color: #CCC;
+	width: 100%;
+}
+
+/* Navigasjonsfelt */
+#nav {
+	background-color: black;
+	width: 100%;
+	font-family: LemonMilk, Arial, sans-serif;
+	font-size: 16pt;
+	color: white; 
+	display: inline-block;
+	}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #EB232E;
+}
+
+/* Navigasjonsliste */
+ul{
+	list-style-type: none;
+	margin:0;
+    padding:0;
+}
+
+li {
+	float: left;
+	text-align: center;
+}
+
+/* DROPDOWN MENY */
+li a, .dropbtn {
+	display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 130px;
+}
+
+.dropdown-content a {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #878787;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+/* Overskrift */
+h1 {
+	font-family: LemonMilk, Arial, sans-serif;
+	font-size: 35pt;
+	color: black;
+	text-align: center;
+}
+
+/* Her skal innleggene ligge */
+article {
+	width: 80%;
+	margin: 0px auto;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14pt;
+}
