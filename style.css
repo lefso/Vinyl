@@ -10,6 +10,7 @@ body {
 	margin: 0px auto;
 }
 
+
 /* Header med logo */
 header {
 	background-color: #CCC;
@@ -24,11 +25,23 @@ header {
 	font-size: 16pt;
 	color: white; 
 	display: inline-block;
+    text-align: center;
+    
 	}
+
+/*#navigator {
+    width: 750%;
+    margin: 0 auto;
+    list-style: none;
+}*/
 
 a{
 	text-decoration: none;
 	cursor: pointer;
+    padding: 0 30px;
+    display: block;
+    text-align: center;
+    width: 130px;
 }
 
 a:hover {
@@ -40,6 +53,9 @@ ul{
 	list-style-type: none;
 	margin:0;
     padding:0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 li {
@@ -85,6 +101,7 @@ li a, .dropbtn {
 h1 {
 	font-family: LemonMilk, Arial, sans-serif;
 	font-size: 35pt;
+    text-decoration: underline;
 	color: black;
 	text-align: center;
 }
@@ -98,4 +115,11 @@ article {
 p {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14pt;
+}
+
+/* footer */
+
+footer {
+    background-color: #CCC;
+    width: 100%;
 }
