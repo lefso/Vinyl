@@ -1,13 +1,8 @@
 /* Selve bakgrunnen/kroppen */
-@font-face {
-	font-family: LemonMilk;
-	src: url(lemonMilk.woff);
-}
-
 body {
 	background-color: #F1F1F1;
 	width: 100%;
-	margin: 0px auto;
+	margin: 0px auto;	
 }
 
 /* Header med logo */
@@ -16,19 +11,29 @@ header {
 	width: 100%;
 }
 
+#logo{
+	margin: 0px auto;
+	display: block;
+	padding: 30px 30px 50px 30px;
+}
+
 /* Navigasjonsfelt */
 #nav {
-	background-color: black;
+	background-color: #202121;
 	width: 100%;
-	font-family: LemonMilk, Arial, sans-serif;
-	font-size: 16pt;
-	color: white; 
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 13pt;
 	display: inline-block;
+	text-align: center;
 	}
 
 a{
 	text-decoration: none;
 	cursor: pointer;
+	padding: 0 30px;
+	text-align: center;
+	display: block;
 }
 
 a:hover {
@@ -40,7 +45,9 @@ ul{
 	list-style-type: none;
 	margin:0;
     padding:0;
-}
+    position: relative; /*LL*/
+    display: inline-block; /*LL*/
+    }
 
 li {
 	float: left;
@@ -50,7 +57,7 @@ li {
 /* DROPDOWN MENY */
 li a, .dropbtn {
 	display: inline-block;
-    color: white;
+	color: #F1F1F1;
     text-align: center;
     padding: 14px 16px;
 }
@@ -69,7 +76,7 @@ li a, .dropbtn {
     text-decoration: none;
     display: block;
 	text-align: left;
-}
+	}
 
 .dropdown-content a:hover {
 	background-color: #878787;
@@ -83,15 +90,29 @@ li a, .dropbtn {
 
 /* Overskrift */
 h1 {
-	font-family: LemonMilk, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: lighter;
 	font-size: 35pt;
 	color: black;
 	text-align: center;
+	margin-bottom: 0;
 }
 
-/* Her skal innleggene ligge */
+/*Linje under overskriftene*/
+#line{
+	border-bottom: 1px solid;
+	width: 300px;
+	margin: 0px auto;
+}
+
+/*For å fikse mellomrommet mellom overskriften og innholdet*/
+#innhold{
+	padding-top: 30px;
+}
+
+/* Selve delen med innhold */
 article {
-	width: 80%;
+	width: 70%;
 	margin: 0px auto;
 }
 
@@ -99,3 +120,29 @@ p {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14pt;
 }
+
+/*Footer*/
+footer{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	background-color: #CCC;
+	color:black;
+	padding: 15px 0px 15px 0px;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer_link{
+	width: 20%;
+	text-align: center;
+	
+}
+
+a#foot:visited{
+	color:black;
+}
+
+a#foot:hover{
+	color:dimgray;
+}
+
