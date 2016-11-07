@@ -1,7 +1,7 @@
 /* Selve bakgrunnen/kroppen */
 @font-face {
 	font-family: LemonMilk;
-	src: url(lemonMilk.woff);
+	src: url(lemonmilk-webfont.woff); /*Legge til @font-face*/
 }
 
 body {
