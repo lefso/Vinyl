@@ -29,6 +29,10 @@ header {
 	text-align: center;
 	}
 
+.nav {
+    text-align: center; /* tester med ul=navig */
+}
+
 /*#navigator {
     width: 750%;
     margin: 0 auto;
@@ -101,7 +105,6 @@ h1 {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 	font-size: 35pt;
-    text-decoration: underline;
 	color: black;
 	text-align: center;
 	margin-bottom: 0;
