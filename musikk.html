@@ -40,7 +40,43 @@
 			<div id="line"></div>
 		
 			<section id="innhold">
-				<!--Inni her skal alt det som ikke er likt på alle sidene ligge!-->				
+				<!-- !!ENDRET!! -->
+				<script> 
+				var looper;
+				var degrees = 0;
+				function rotateAnimation(element,speed){
+					var el = document.getElementById(element);
+					if(navigator.userAgent.match("Chrome")){
+						el.style.WebkitTransform = "rotate("+degrees+"deg)";
+					} 
+					else if(navigator.userAgent.match("Firefox")){
+						el.style.MozTransform = "rotate("+degrees+"deg)";
+					} 
+					else if(navigator.userAgent.match("MSIE")){
+						el.style.msTransform = "rotate("+degrees+"deg)";
+					} 
+					else if(navigator.userAgent.match("Opera")){
+						el.style.OTransform = "rotate("+degrees+"deg)";
+					} else {
+						el.style.transform = "rotate("+degrees+"deg)";
+					}
+						looper = setTimeout('rotateAnimation(\''+element+'\','+speed+')',speed);
+						degrees++;
+					if(degrees > 359){
+						degrees = 1;
+					}
+					}
+				</script>
+				
+				<img id="liten_logo" src="img/Logo_utentekst.png" width="100px" height="100px"> <!-- !!ENDRET!! -->
+				
+				<script>
+				rotateAnimation("liten_logo",30);
+				</script>
+				
+				<!-- Kilde for rotasjonskode: 
+				https://www.developphp.com/video/JavaScript/Transform-Rotate-Image-Spin-Smooth-Animation-Tutorial
+				-->				
 			</section>
 			
 		</article>
