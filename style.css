@@ -16,7 +16,7 @@ header {
 #logo{
 	margin: 0px auto;
 	display: block;
-	padding: 30px 30px 50px 30px;
+	padding: 30px 30px 30px 30px;
 }
 
 /* Navigasjonsfelt */
@@ -155,7 +155,7 @@ a#foot:visited{
 	color:black;
 }
 
-a#foot:hover, a#facebook:hover{
+a#foot:hover, a#kLink:hover{
 	color:dimgray;
 }
 
@@ -177,7 +177,7 @@ a#foot:hover, a#facebook:hover{
 
 
 /*Styling av "kontakt oss"-siden*/
-#facebook{
+#kLink{
 	color:black;
 	display: inline;
 	padding:0;
