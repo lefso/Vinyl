@@ -10,11 +10,9 @@ const norwegian = {
 }
 
 function changeToEnglish() {
-    document.getElementById("overskrift").innerHTML = english.title;
     document.getElementById("omKlubben").innerHTML = english.paragraph;
 }
 
 function changeToNorwegian() {
-    document.getElementById("overskrift").innerHTML = norwegian.title;
     document.getElementById("omKlubben").innerHTML = norwegian.parapraph;
 }

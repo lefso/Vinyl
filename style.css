@@ -130,6 +130,11 @@ h1 {
     right: 0px;
 }
 
+#buttons a {
+    display: inline;
+    padding: 10px;
+}
+
 article {
 	width: 70%;
 	margin: 0px auto;
@@ -139,6 +144,8 @@ p {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14pt;
 }
+
+#
 
 /*Footer*/
 footer{
