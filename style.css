@@ -150,8 +150,13 @@ a#foot:visited{
 	color:black;
 }
 
-a#foot:hover{
+a#foot:hover, a#facebook:hover{
 	color:dimgray;
 }
 
+#facebook{
+	color:black;
+	display: inline;
+	padding:0;
+}
 
