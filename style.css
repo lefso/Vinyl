@@ -30,12 +30,6 @@ header {
 	text-align: center;
 	}
 
-/*#navigator {
-    width: 750%;
-    margin: 0 auto;
-    list-style: none;
-}*/
-
 a{
 	text-decoration: none;
 	cursor: pointer;
@@ -53,13 +47,13 @@ ul{
 	list-style-type: none;
 	margin:0;
     padding:0;
-    position: relative; /*LL*/
-    display: inline-block; /*LL*/
+    position: relative; 
+    display: inline-block; 
     }
 
 
 li {
-	float: left;
+	display: inline-block;
 	text-align: center;
 }
 
@@ -114,12 +108,23 @@ h1 {
 	margin: 0px auto;
 }
 
-/*For å fikse mellomrommet mellom overskriften og innholdet*/
+/*Mellomrom mellom overskriften og innholdet*/
 #innhold{
 	padding-top: 30px;
 }
 
 /* Selve delen med innhold */
+
+#artikkelBakgrunn {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 article {
 	width: 70%;
 	margin: 0px auto;
@@ -151,8 +156,14 @@ a#foot:visited{
 	color:black;
 }
 
-a#foot:hover{
+a#foot:hover, a#facebook:hover{
 	color:dimgray;
 }
 
+/*Link på "kontakt oss"-siden*/
+#facebook{
+	color:black;
+	display: inline;
+	padding:0;
+}
 
