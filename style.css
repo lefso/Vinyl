@@ -117,8 +117,14 @@ h1 {
 
 #artikkelBakgrunn {
     background-color: white;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+    padding: 0 2% 2% 2%;
+    /*border-style: solid;*/
+    border-width: 1px;
+>>>>>>> 638607c6caa4085c41e3469d5342ca76bf68faf3
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
@@ -137,13 +143,11 @@ h1 {
 article {
 	width: 70%;
 	margin: 0px auto;
-}
-
-p {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 
+<<<<<<< HEAD
 #timer {
     display: none;
     width: 300px;
@@ -162,19 +166,31 @@ p {
 }
 
 /*Footer*/
+=======
+/*Styling av footer*/
+>>>>>>> 638607c6caa4085c41e3469d5342ca76bf68faf3
 footer{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 10pt;
 	background-color: #CCC;
 	color:black;
-	padding: 15px 0px 15px 0px;
+	padding: 0px 0px 12px 0px;
 	bottom: 0;
 	width: 100%;
+	height: 40px;
+	position: relative;
 }
 
 .footer_link{
+<<<<<<< HEAD
 	width: 20%;
 	text-align: center;
+=======
+	position: absolute;
+	left: 0;
+	font-weight: bold;
+	top: 20px;
+>>>>>>> 638607c6caa4085c41e3469d5342ca76bf68faf3
 }
 
 a#foot:visited{
@@ -185,10 +201,68 @@ a#foot:hover, a#facebook:hover{
 	color:dimgray;
 }
 
-/*Link på "kontakt oss"-siden*/
+#dmb{
+	position: absolute;
+	bottom: 15px;
+	right: 2%;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#navn{
+	position: absolute;
+	bottom: 0;
+	right: 2%;
+	font-size: 10pt;
+	font-weight: lighter;
+}
+
+
+/*Styling av "kontakt oss"-siden*/
 #facebook{
 	color:black;
 	display: inline;
 	padding:0;
 }
 
+.kontaktBakgrunn{
+	position: relative;
+    min-height: 600px;
+}
+
+#Terje{
+	position: absolute;
+	background-color: whiteSmoke;
+	width: 250px;
+	Height: 250px;
+	right: 22%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#Gry{
+	position: absolute;
+	width: 250px;
+	Height: 250px;
+	right: 22%;
+	top: 50%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#terjeInfo{
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+
+#gryInfo{
+	position: absolute;
+	left: 20%;
+	top: 57%;
+}
+
+#fb{
+	position: absolute;
+	left: 30%;
+	right:30%;
+	top: 92%;
+}
