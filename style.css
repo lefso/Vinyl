@@ -29,16 +29,6 @@ header {
 	text-align: center;
 	}
 
-.nav {
-    text-align: center; /* tester med ul=navig */
-}
-
-/*#navigator {
-    width: 750%;
-    margin: 0 auto;
-    list-style: none;
-}*/
-
 a{
 	text-decoration: none;
 	cursor: pointer;
@@ -56,13 +46,13 @@ ul{
 	list-style-type: none;
 	margin:0;
     padding:0;
-    position: relative; /*LL*/
-    display: inline-block; /*LL*/
+    position: relative; 
+    display: inline-block; 
     }
 
 
 li {
-	display: inline-block; /* endret fra float: left*/
+	display: inline-block;
 	text-align: center;
 }
 
@@ -117,14 +107,14 @@ h1 {
 	margin: 0px auto;
 }
 
-/*For å fikse mellomrommet mellom overskriften og innholdet*/
+/*Mellomrom mellom overskriften og innholdet*/
 #innhold{
 	padding-top: 30px;
 }
 
 /* Selve delen med innhold */
 
-#artikkelBakgrunn { /*forsøk på bakgrunn */
+#artikkelBakgrunn {
     background-color: white;
     margin: 0;
     padding: 0;
@@ -169,6 +159,7 @@ a#foot:hover, a#facebook:hover{
 	color:dimgray;
 }
 
+/*Link på "kontakt oss"-siden*/
 #facebook{
 	color:black;
 	display: inline;
