@@ -122,6 +122,17 @@ h1 {
     border-width: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+#buttons {
+    position: absolute;
+    right: 0px;
+}
+
+#buttons a {
+    display: inline;
+    padding: 10px;
 }
 
 article {
@@ -131,7 +142,26 @@ article {
 	font-size: 12pt;
 }
 
+
+#timer {
+    display: none;
+    width: 300px;
+    border-style: solid;
+    background-color: #ccc;
+    position:absolute;
+        
+}
+
+#timer p {
+    text-align: center;
+}
+
+#timer span {
+    color: crimson;
+}
+
 /*Styling av footer*/
+
 footer{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 10pt;
