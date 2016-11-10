@@ -37,13 +37,105 @@
   				<li><a href="kontakt_oss.html">Kontakt oss</a></li>
 			</ul>
 		</div>
-		
+        
 		<article>
 			<h1>Bildegalleri</h1>
 			<div id="line"></div>
 		<div id="artikkelBakgrunn">
+            
 			<section id="innhold">
-				<!--Inni her skal alt det som ikke er likt på alle sidene ligge!-->				
+				
+                <!--Bildene som vises når siden lastes inn.-->
+                <table>
+                    <tr>
+                        <td>
+                            <div class="bilde">
+                                <img src="img/and.jpg"  onclick="åpenPopup();detteBildet(1)" class="skygge">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="bilde">
+                                <img src="img/hus.jpg"  onclick="åpenPopup();detteBildet(2)" class="skygge">
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="bilde">
+                                <img src="img/tre.jpg"  onclick="åpenPopup();detteBildet(2)" class="skygge">
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="bilde">
+                                <img src="img/kodebild.PNG"  onclick="åpenPopup();detteBildet(4)" class="skygge">
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="bilde">
+                                <img src="img/Capture.PNG"  onclick="åpenPopup();detteBildet(5)" class="skygge">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+        
+                <!--Popupen som dukker opp når et av bildene blir trykket på.-->
+                <div id="popupId" class="popupClass">
+
+                    <!--Lukkeknappen som kryser ut popupen.-->
+                    <span class="lukk" onclick="lukkPopup()">x</span>
+
+                    <!--Selve innholdet i popupen. Det er separert i et eget div-element som skiller det fra "bakgrunnen" av popup-vinduet.-->
+                    <div class="popupInnhold">
+                        <div class="bilder">
+                            <img src="img/and.jpg" class="hovedBilde">
+                        </div>
+
+                        <div class="bilder">
+                            <img src="img/hus.jpg" class="hovedBilde">
+                        </div>
+
+                        <div class="bilder">
+                            <img src="img/tre.jpg" class="hovedBilde">
+                        </div>
+
+                        <div class="bilder">
+                            <img src="img/kodebild.PNG" class="hovedBilde">
+                        </div>
+
+                        <div class="bilder">
+                            <img src="img/Capture.PNG" class="hovedBilde">
+                        </div>
+
+                        <!-- knapper som går til neste eller forrige bilde i galleriet.-->
+                        <button type="button" class="forrige" onclick="nyttBilde(-1)">Forrige</button>
+                        <button type="button" class="neste" onclick="nyttBilde(1)">Neste</button>
+
+                        <!--Bildene som kommer opp under hovedbildet i galleriet.-->
+                        <div class="underBilde">
+                            <img src="img/and.jpg" class="bildeRekke" onclick="detteBildet(1)">
+                        </div>
+
+                        <div class="underBilde">
+                            <img src="img/hus.jpg" class="bildeRekke" onclick="detteBildet(2)">
+                        </div>
+
+                        <div class="underBilde">
+                            <img src="img/tre.jpg" class="bildeRekke" onclick="detteBildet(3)">
+                        </div>
+
+                        <div class="underBilde">
+                            <img src="img/kodebild.PNG" class="bildeRekke" onclick="detteBildet(4)">
+                        </div>
+
+                        <div class="underBilde">
+                            <img src="img/Capture.PNG" class="bildeRekke" onclick="detteBildet(5)">
+                        </div>
+                    </div>
+                </div>
+                
 			</section>
 		</div>
 		</article>
@@ -54,6 +146,6 @@
 			<p id="navn">Julie Sjaavaag, Leif Ulvund, Therese Federl & Sunniva Runde</p>
 		</footer>
 		
-		<!--Her skal script legges-->
+		<script src="javascript/Bildegalleri.js"></script>
 	</body>
 </html>
