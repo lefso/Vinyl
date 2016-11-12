@@ -281,7 +281,7 @@ a#foot:hover, a#kLink:hover{
 
 /*Selve popup-en.*/
 .popupClass {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     display: none;
     position: fixed;
     z-index: 1;
