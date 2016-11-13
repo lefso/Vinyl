@@ -1,4 +1,5 @@
 
+/* funksjon som får vinylplaten til å spinne */
 var looper;
 var degrees = 0;
 function rotateAnimation(element,speed){

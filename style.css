@@ -10,24 +10,38 @@ body {
 #imgVelkommen {
     width: 100%;
     height: 100%;
+    border-style: solid;
+    border-width: 5px;
 }
 
 #divVelkommen {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
 /* Header med logo */
 header {
-	background-color: #CCC;
+	height: 400px;
 	width: 100%;
 	position: relative;
 }
 
+#headerbilde {
+	position: absolute; 
+	top: 0; left: ; 
+	width: 110%; 
+	height: 110%; 
+	z-index: -1; 
+	filter: blur(5px) grayscale(100%);
+	transform: scale(1.03); /* Zoomer inn bildet med 3% for å fjerne hvit border*/
+	opacity: 0.9;
+	} 
+
 #logo{
-	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
-	padding: 30px 30px 50px 30px;
+	padding-top: 55px;
 }
 
 #fbLogo{
@@ -140,14 +154,19 @@ h1 {
 }
 
 #language {
-    position: absolute;
-    margin-right: 164px;
+    float: right;
 }
 
 #language a {
     display: inline;
-    padding: 10px;
+    padding-left: 10px;
 }
+
+#language p {
+    float: right;
+    font-size: 10pt;
+}
+
 
 article {
 	width: 70%;
@@ -287,7 +306,7 @@ a#foot:hover{
     margin-bottom: 0;
 }
 
-section bloggInnlegg {
+.bloggInnlegg {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -325,9 +344,15 @@ p { /* på alle sidene */
 }
 
 /* linken til Om klubben på hovedsiden */
-.innhold p a {
+#langLink p a {
     display: inline;
 }
+
+#langLink p {
+    font-size: 10pt;
+    float: right;
+}
+
 
 /* vinylplata */
 
