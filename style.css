@@ -11,12 +11,19 @@ body {
 header {
 	background-color: #CCC;
 	width: 100%;
+	position: relative;
 }
 
 #logo{
 	margin: 0px auto;
 	display: block;
-	padding: 30px 30px 30px 30px;
+	padding: 30px 30px 50px 30px;
+}
+
+#fbLogo{
+	position: absolute;
+	top: 4%;
+	right: 0;
 }
 
 /* Navigasjonsfelt */
@@ -99,13 +106,7 @@ h1 {
 	color: black;
 	text-align: center;
 	margin-bottom: 0;
-}
-
-/*Linje under overskriftene*/
-#line{
-	border-bottom: 1px solid;
-	width: 300px;
-	margin: 0px auto;
+	margin-top: 60px;
 }
 
 /*Mellomrom mellom overskriften og innholdet*/
@@ -114,13 +115,11 @@ h1 {
 }
 
 /* Selve delen med innhold */
-
 #artikkelBakgrunn {
     background-color: white;
     padding: 0 2% 2% 2%;
-    /*border-style: solid;*/
     border-width: 1px;
-    margin-top: 30px;
+    margin-top: 38.7px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -211,11 +210,14 @@ a#foot:hover, a#kLink:hover{
 	color:black;
 	display: inline;
 	padding:0;
+	font-weight: lighter;
 }
 
-.kontaktBakgrunn{
+.Back{
 	position: relative;
     min-height: 600px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #Terje{
@@ -253,4 +255,18 @@ a#foot:hover, a#kLink:hover{
 	left: 30%;
 	right:30%;
 	top: 92%;
+}
+
+#imgVelkommen{
+}
+
+/*Styling av "om klubben"*/
+.lang{
+	margin: -15px;
+	display: inline block;
+	
+}
+
+#buttons{
+	margin:0 2% 0 0;
 }
