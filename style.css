@@ -9,15 +9,27 @@ body {
 
 /* Header med logo */
 header {
-	background-color: #CCC;
+	height: 400px;
 	width: 100%;
 	position: relative;
 }
 
+#headerbilde {
+	position: absolute; 
+	top: 0; left: ; 
+	width: 110%; 
+	height: 110%; 
+	z-index: -1; 
+	filter: blur(5px) grayscale(100%);
+	transform: scale(1.03); /* Zoomer inn bildet med 3% for å fjerne hvit border*/
+	opacity: 0.9;
+	} 
+
 #logo{
-	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
-	padding: 30px 30px 50px 30px;
+	padding-top: 55px;
 }
 
 #fbLogo{
@@ -110,7 +122,6 @@ h1 {
 	font-size: 35pt;
 	color: black;
 	text-align: center;
-<<<<<<< HEAD
 	margin-bottom: 50px;
     margin-top: 0;
 }
