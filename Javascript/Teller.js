@@ -9,7 +9,8 @@ function resterendeTid(slutt) {
     }; /*generer en liste med objekter med verdier som tilsvarer tiden mellom nå og sluttid*/
 }
 
-function startKlokke(sluttTid) { /* tar inn en deadline */
+/* tar inn en deadline */
+function startKlokke(sluttTid) { 
     const klokke = document.getElementById("timer");
     klokke.style.display = "block";
     let dagerSpan = klokke.querySelector(".dager");
