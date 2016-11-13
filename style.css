@@ -9,8 +9,13 @@ body {
 /*Bildet på hovedsiden.*/
 #imgVelkommen {
     width: 100%;
+    height: 100%;
 }
 
+#divVelkommen {
+    width: 60%;
+    margin: auto;
+}
 
 /* Header med logo */
 header {
