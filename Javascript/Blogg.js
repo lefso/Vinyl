@@ -12,7 +12,7 @@ const blogg = [
         datoen: '11.11.2016',
         title: 'Leonard Cohen er død',
         text: 'Enda en kjempe har falt. You will be missed.',
-        medie: '<iframe width="560" height="315" src="https://www.youtube.com/embed/7-0lV5qs1Qw" frameborder="0" allowfullscreen></iframe>'
+        medie: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ao0BdtZr2_M" frameborder="0" allowfullscreen></iframe>'
     },
     {
         datoen: '20.06.2016',
