@@ -110,7 +110,6 @@ h1 {
 	font-size: 35pt;
 	color: black;
 	text-align: center;
-<<<<<<< HEAD
 	margin-bottom: 50px;
     margin-top: 0;
 }
@@ -139,6 +138,10 @@ h1 {
 #language a {
     display: inline;
     padding: 10px;
+}
+
+#langLink p {
+    
 }
 
 article {
@@ -276,7 +279,7 @@ a#foot:hover, a#kLink:hover{
     margin-bottom: 0;
 }
 
-section bloggInnlegg {
+.bloggInnlegg {
     margin-top: 50px;
     margin-bottom: 50px;
 }
