@@ -28,13 +28,15 @@ header {
 
 #headerbilde {
 	position: absolute; 
-	top: 0; left: ; 
-	height: 100%; 
+	top: 0; left: 0;
+	height: 100%;
+	width: 100%;
 	z-index: -1; 
 	filter: blur(5px) grayscale(100%);
-	transform: scale(1.04); /* Zoomer inn bildet med 4% for å fjerne hvit border*/
+	transform: scale(1.04); /*Zoomer inn bildet med 4% for å fjerne hvit border*/
 	opacity: 0.9;
 	} 
+	
 
 #logo{
 	margin-left: auto;
