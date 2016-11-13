@@ -6,6 +6,11 @@ body {
 	margin: 0px auto;	
 }
 
+/*Bildet på hovedsiden.*/
+#imgVelkommen {
+    width: 100%;
+}
+
 
 /* Header med logo */
 header {
@@ -110,7 +115,6 @@ h1 {
 	font-size: 35pt;
 	color: black;
 	text-align: center;
-<<<<<<< HEAD
 	margin-bottom: 50px;
     margin-top: 0;
 }
@@ -321,7 +325,15 @@ p { /* på alle sidene */
 /* vinylplata */
 
 #liten_logo {
-    
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logoDiv {
+    width: 100px;
+    margin: auto;
 }
 
 /*Styling av "om klubben"*/
@@ -345,6 +357,7 @@ p { /* på alle sidene */
     cursor: pointer;
 }
 
+/*Div-elementet som bildene i bilderekken ligger i*/
 .underBilde {
     margin-left: 30px;
     width: 25%;
