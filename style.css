@@ -28,14 +28,19 @@ header {
 	font-size: 13pt;
 	display: inline-block;
 	text-align: center;
+    position: relative; /*legger menu over content*/
+    z-index: 100; /* legger menu over content*/
 	}
 
 a{
 	text-decoration: none;
 	cursor: pointer;
-	padding: 0 30px;
-	text-align: center;
 	display: block;
+}
+
+#foot {
+    padding: 0 30px;   /* flyttet fra  a*/
+	text-align: center;
 }
 
 a:hover {
@@ -43,7 +48,7 @@ a:hover {
 }
 
 /* Navigasjonsliste */
-ul{
+#nav ul{
 	list-style-type: none;
 	margin:0;
     padding:0;
@@ -52,7 +57,7 @@ ul{
     }
 
 
-li {
+#nav ul li {
 	display: inline-block;
 	text-align: center;
 }
@@ -98,39 +103,41 @@ h1 {
 	font-size: 35pt;
 	color: black;
 	text-align: center;
-	margin-bottom: 0;
+	margin-bottom: 50px;
+    margin-top: 0;
 }
 
-/*Linje under overskriftene*/
+/* h1 på arrangement */
+
+#arrTittel {
+    margin-bottom: 30px;
+}
+
+/* Kan fjernes
+/* Linje under overskriftene */
 #line{
 	border-bottom: 1px solid;
 	width: 300px;
 	margin: 0px auto;
 }
-
-/*Mellomrom mellom overskriften og innholdet*/
-#innhold{
-	padding-top: 30px;
-}
-
+*/
 /* Selve delen med innhold */
 
 #artikkelBakgrunn {
     background-color: white;
     padding: 0 2% 2% 2%;
-    /*border-style: solid;*/
     border-width: 1px;
-    margin-top: 30px;
+    margin-top: 38.7px; /*endret margin*/
     margin-bottom: 30px;
     position: relative;
 }
 
-#buttons {
+#language {
     position: absolute;
-    right: 0px;
+    margin-right: 164px;
 }
 
-#buttons a {
+#language a {
     display: inline;
     padding: 10px;
 }
@@ -140,20 +147,23 @@ article {
 	margin: 0px auto;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 12pt;
+    padding-top: 40px;
 }
 
-
+/* javascript timer */
 #timer {
     display: none;
     width: 300px;
-    border-style: solid;
-    background-color: #ccc;
-    position:absolute;
-        
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;     
 }
 
 #timer p {
     text-align: center;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 0;
+    border-bottom: 20px
 }
 
 #timer span {
@@ -206,7 +216,7 @@ a#foot:hover, a#facebook:hover{
 }
 
 
-/*Styling av "kontakt oss"-siden*/
+/* Styling av "kontakt oss"-siden */
 #facebook{
 	color:black;
 	display: inline;
@@ -253,4 +263,61 @@ a#foot:hover, a#facebook:hover{
 	left: 30%;
 	right:30%;
 	top: 92%;
+}
+
+/* Blogginnlegg */
+
+.bloggInnlegg h2 {
+    margin-top: 0;
+}
+.bloggInnlegg h3 {
+    margin-bottom: 0;
+}
+
+section bloggInnlegg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* tester med større linjemellomrom og padding */
+
+p { /* på alle sidene */
+    line-height: 200%;
+}
+
+.innhold { /* på alle sidene */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* prøver å endre mellomrom mellom sidetittel og bakgrunn */
+
+.sideTittel {
+    padding-top: 30px;
+}
+
+/* mellomrom mellom h2 og p i arrangement */
+#arrInnhold h2 {
+    margin-top: 40px;
+    margin-bottom:0;
+}
+
+#artikkelBakgrunn {
+    background-color: white;
+    padding: 0 2% 2% 2%;
+    border-width: 1px;
+    margin-top: 38.7px; /*endret margin*/
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* linken til Om klubben på hovedsiden */
+.innhold p a {
+    display: inline;
+}
+
+/* vinylplata */
+
+#liten_logo {
+    
 }

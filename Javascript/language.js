@@ -1,20 +1,20 @@
-const english = {
+const englishAboutUs = {
     title: "About us",
-    paragraph: "<p>Larvik Vinylklubb was founded in 2008 by a group of local music enthusiasts. </p><p>Our club is a nonprofit organisation, registrated in the Brønnøysund register (organisation number 914 459 184). </p><p>The purpose of our organisation is to create a social arena for people of all ages who are interested in music - of any genre. We organise club meetings, concerts and trips for members and non-members.</p><p>The club meets once every month, with the exception of July and August.</p><p>The meetings entail lectures on music, hi-fi, instruments or musicians or people that are in some way relative within the field of music. There is also a quiz, lottery and of course great company.</p><p>During the year we arrange concerts with music that would otherwise not have been presented on any stage in Larvik. </p><p>In addition, the club arranges a yearly christmas dinner and summer get-together.</p><p>You don’t have to be a member to come to our club meetings. You don’t have to own any vinyl either. What we do hope you have, however, is the wish to participate in a community whose essence is the enjoyment of all music, and what it does to us as people.</p>"
+    paragraph: "<p>Larvik vinylklubb was founded in 2008 by a group of local music enthusiasts. Our club is a nonprofit organization, and we are registered in the Norwegian Central Coordinating Register for Legal Entities (organization number 914 459 184).</p><p>The club is meant to be a meeting place for everyone who cares about music, no matter what genre. We arrange meetings, concerts and tours in order to share (flotte) musical experiences and have a good time together.</p><h2>Meetings and parties</h2><p>Larvik vinylklubb arranges club meetings every month, apart from July and August. At these meetings we have presentations about music, hi-fi, instruments or important persons and artists in the field of music. We also have quizzes and lotteries. In December we arrange a julebord (Christmas dinner), and in June there is a summer party.</p><h2>Concerts</h2><p>Our concerts feature special artists that you normally will not find at any other music venue in Larvik.</p><h2>Welcome!</h2><p>You do not have to be a member in order to attend our meetings or concerts. You don't even have to own any vinyl records! The only thing you need, is an interest in music and a wish to share it with other music enthusiasts.</p>"
 }
 
 
-const norwegian = {
+const norwegianAboutUs = {
     title: "Om klubben",
-    parapraph: "<p>Larvik Vinylklubb ble dannet i 2008 av en rekke lokale musikkentusiaster.</p> <p>Klubben vår er en ideell forening (registrert i Brønnøysund – organisasjonsnummer 914 459 184).</p> <p>Vårt formål er å fungere som en sosial arena for folk i alle aldre som er glad i og opptatt av musikk – uansett sjanger. </p> <p>Derfor arrangerer vi medlemsmøter, konserter og turer for å dele felles musikkinteresse. </p><p>Klubben har medlemsmøte en gang i måneden, med unntak av juli-august. </p><p>Møtene inneholder foredrag om musikk, hi-fi, instrumenter eller personer/utøvere innenfor musikkfeltet. Det er i tillegg quiz, utlodning og hyggelig samvær. </p><p>I løpet av året arrangeres det også konserter med spennende musikk som normalt ikke ville fått noe scene i Larvik.</p> <p>Klubben har i tillegg julebord og sommerfest for medlemmene. </p><p> Du behøver ikke være medlem for å delta på klubbens møter. Du trenger heller ikke å være eier av vinyl, men håper at du har et ønske om å ta del i et fellesskap som bygger på opplevelse av musikk og hva det gjør med oss.</p>"
+    parapraph: "<h2>Formål</h2><p>Larvik vinylklubb ble dannet i 2008 av en gruppe lokale musikkentusiaster. Klubben vår er en ideell forening, og vi er registrert i Brønnøysundregistrene (organisasjonsnummer 914 459 184). Vinylklubben skal være en sosial arena for alle som er glad i og opptatt av musikk, uansett sjanger. Vi arrangerer medlemsmøter, konserter og turer for å dele flotte musikkopplevelser og ha det hyggelig sammen.</p><h2>Møter</h2><p>Klubben har medlemsmøte én gang i måneden, med unntak av juli og august. På møtene har vi foredrag om musikk, hi-fi, instrumenter eller personer og utøvere innenfor musikkfeltet. Vi har også quiz og utlodning. I desember arrangerer vi dessuten julebord, og i juni har vi sommerfest for medlemmene.</p><h2>Konserter</h2><p>På konsertene vi arrangerer, kan du få høre spennende musikk som normalt ikke ville fått noen scene i Larvik.</p><h2>Velkommen!</h2><p>Du behøver ikke være medlem for å delta på klubbmøtene eller komme på konsertene våre. Du trenger heller ikke å være eier av vinyl, det viktigste er at du vil delta i et fellesskap der interessen for musikk og musikkopplevelser står i sentrum.</p>"
 }
 
 function changeToEnglish() {
-    document.getElementById("omKlubben").innerHTML = english.paragraph;
-    document.getElementById("about").innerHTML = english.title;
+    document.getElementById("omKlubben").innerHTML = englishAboutUs.paragraph;
+    document.getElementById("about").innerHTML = englishAboutUs.title;
 }
 
 function changeToNorwegian() {
-    document.getElementById("omKlubben").innerHTML = norwegian.parapraph;
-    document.getElementById("about").innerHTML = norwegian.title;
+    document.getElementById("omKlubben").innerHTML = norwegianAboutUs.parapraph;
+    document.getElementById("about").innerHTML = norwegianAboutUs.title;
 }
