@@ -257,9 +257,6 @@ a#foot:hover, a#kLink:hover{
 	top: 92%;
 }
 
-#imgVelkommen{
-}
-
 /*Styling av "om klubben"*/
 .lang{
 	margin: -15px;
@@ -269,4 +266,115 @@ a#foot:hover, a#kLink:hover{
 
 #buttons{
 	margin:0 2% 0 0;
+
+/*Bildegalleri*/
+
+/*Bildene man ser når man først laster inn siden.*/
+.bilde {
+    padding:8px;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.underBilde {
+    margin-left: 30px;
+    width: 25%;
+    padding:8px;
+    float: left;
+    cursor: pointer;
+}
+
+/*Bildet som kommer opp når man trygger på selve bildet, forrige- eller neste-knappen.*/
+ .hovedBilde {
+    width: 100%;
+}
+
+/*Selve popup-en.*/
+.popupClass {
+    box-sizing: border-box;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*Innholdet i popup-en.*/
+.popupInnhold {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 35%;
+    min-width: 600px;
+    max-width: 1000px;
+}
+
+/*Lukkeknappen.*/
+.lukk {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Lukkeknappen når man holder musepekeren over.*/
+.lukk:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+/*Forrige-knappen.*/
+.forrige {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 20px;
+}
+
+/*Neste-knappen.*/
+.neste {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 20px;
+}
+
+/*Bildene som vises under hovedbildet i popupen.*/
+.bildeRekke {
+    width: 100%;
+    cursor: pointer;
+}
+
+/*Når box-shadow endrer seg på elementene med class skygge tar endringen 0.3 sekunder.*/
+.skygge {
+    width: 100%;
+    transition: box-shadow 0.3s
+}
+
+/*Når man holder musepekeren over et element med class skygge får elementet en boks-skygge.*/
+.skygge:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
