@@ -29,11 +29,10 @@ header {
 #headerbilde {
 	position: absolute; 
 	top: 0; left: ; 
-	width: 110%; 
-	height: 110%; 
+	height: 100%; 
 	z-index: -1; 
 	filter: blur(5px) grayscale(100%);
-	transform: scale(1.03); /* Zoomer inn bildet med 3% for å fjerne hvit border*/
+	transform: scale(1.04); /* Zoomer inn bildet med 4% for å fjerne hvit border*/
 	opacity: 0.9;
 	} 
 
@@ -79,12 +78,12 @@ a:hover {
 }
 
 /* Navigasjonsliste */
-#nav ul{
+#nav ul {
 	list-style-type: none;
 	margin:0;
     padding:0;
     position: relative; 
-    display: inline-block; 
+    display: inline-block;
     }
 
 
